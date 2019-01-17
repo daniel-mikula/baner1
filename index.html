@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .banner {
+            background: darkblue;
+            color: beige;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            max-width: 1200px;
+        }
+
+        button {
+            display: flex;
+            margin: 0% auto;
+            justify-content: center;
+            background: whitesmoke;
+            width: 100px;
+        }
+
+        .picture {
+            max-width: 1200px;
+        }
+
+        .text {
+            padding: 10px;
+        }
+
+        @media (min-width: 960px) and (max-width: 1200px) {
+
+            .banner {
+                display: flex;
+                flex-direction: row-reverse;
+                box-sizing: border-box;
+                width: 100%;
+                margin: 0% auto;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="banner">
+        <div class="picture">
+            <img src="baner.png" width="100%" height="auto">
+        </div>
+        <div class="container">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quae eaque quo, aliquam nisi
+                harum eos enim impedit laudantium ipsum quibusdam, perspiciatis repellat nesciunt odio hic dolorem,
+                nobis illo ipsa.</p>
+            <a href="http://www.facebook.com">
+                <button>Go to Facebook</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
